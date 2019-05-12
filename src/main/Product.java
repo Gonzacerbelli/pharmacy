@@ -2,43 +2,19 @@ package main;
 
 public class Product {
 
-	private boolean medicamento;
-	private String descripcion;
-	private String laboratorio;
 	private int id;
-	private float precio;
-	
-	public Product(boolean medicamento, String descripcion, String laboratorio, int id, float precio) {
+	private boolean medicine;
+	private String description;
+	private String laboratory;
+	private float price;
+
+	public Product(int id, boolean medicine, String description, String laboratory, float price) {
 		super();
-		this.medicamento = medicamento;
-		this.descripcion = descripcion;
-		this.laboratorio = laboratorio;
 		this.id = id;
-		this.precio = precio;
-	}
-
-	public boolean isMedicamento() {
-		return medicamento;
-	}
-
-	public void setMedicamento(boolean medicamento) {
-		this.medicamento = medicamento;
-	}
-
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-	public void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-	}
-
-	public String getLaboratorio() {
-		return laboratorio;
-	}
-
-	public void setLaboratorio(String laboratorio) {
-		this.laboratorio = laboratorio;
+		this.medicine = medicine;
+		this.description = description;
+		this.laboratory = laboratory;
+		this.price = price;
 	}
 
 	public int getId() {
@@ -49,12 +25,36 @@ public class Product {
 		this.id = id;
 	}
 
-	public float getPrecio() {
-		return precio;
+	public boolean isMedicine() {
+		return medicine;
 	}
 
-	public void setPrecio(float precio) {
-		this.precio = precio;
+	public void setMedicine(boolean medicine) {
+		this.medicine = medicine;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getLaboratory() {
+		return laboratory;
+	}
+
+	public void setLaboratory(String laboratory) {
+		this.laboratory = laboratory;
+	}
+
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
 	}
 
 }
